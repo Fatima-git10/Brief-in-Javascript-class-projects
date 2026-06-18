@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: rgb(170, 214, 252);
+
+            text-align: center;
+
+            padding: 30px;
+
+        }
+
+        h1 {
+
+            color: rgb(255, 69, 190);
+
+        }
+
+        button {
+
+            background: navy;
+
+            color: white;
+
+            padding: 10px 25px;
+
+            border: none;
+
+            border-radius: 20px;
+
+            cursor: pointer;
+
+        }
+
+        div {
+
+            border: 1px solid navy;
+
+            width: 280px;
+
+            margin: 6px auto;
+
+            padding: 8px 12px;
+
+            text-align: left;
+
+            border-radius: 6px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>my profile</h1>
+    <button onclick="showProfile()">Show Profile</button>
+    <div>Name: <span id="Name"></span></div>
+
+    <div>Grade: <span id="Grade"></span></div>
+
+    <div>Course: <span id="Course"></span></div>
+
+    <div>Progress: <span id="Progress"></span></div>
+
+    <div>Skills : <span id="Skills"></span></div>
+
+    <div>Rank: <span id="Rank"></span></div>
+
+    <div>Greetings: <span id="Greetings"></span></div>
+    <script>
+        
+            function showProfile() {
+
+                var name = "Fatima"
+
+                var grade = 7
+
+                var course = "Web Development"
+
+                var progress = "Excellent"
+
+                var skills = "Scratch master , mobile app development, HTML, CSS, Bootstrap, JavaScript"
+
+                var rank = 1
+
+                var greetings = "Have a wonderful day"
+
+                document.getElementById("Name").innerHTML = name;
+
+                document.getElementById("Grade").innerHTML = grade;
+
+                document.getElementById("Course").innerHTML = course;
+
+                document.getElementById("Progress").innerHTML = progress;
+
+                document.getElementById("Skills").innerHTML = skills;
+
+                document.getElementById("Rank").innerHTML = rank;
+
+                document.getElementById("Greetings").innerHTML = greetings;
+
+            }
+    </script>
+</body>
+
+</html>
